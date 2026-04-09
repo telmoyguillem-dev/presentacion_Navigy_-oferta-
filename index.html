@@ -318,7 +318,43 @@
     }
     @media (max-width: 480px) {
       .grid.g3 { grid-template-columns: 1fr !important; }
-    }  </style>
+    }    /* == Mobile == */
+    @media (max-width: 768px) {
+      .slide {
+        padding: 54px 22px 86px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        justify-content: flex-start;
+        align-items: flex-start;
+        -webkit-overflow-scrolling: touch;
+      }
+      .slide > * { width: 100%; }
+      .slide.bg-cover { justify-content: center !important; align-items: center !important; }
+      .slide.bg-white:last-of-type { justify-content: center !important; align-items: center !important; }
+      .grid.g-55, .grid.g-50, .grid.g2, .grid.g3 { grid-template-columns: 1fr !important; gap: 14px !important; }
+      h1.title { font-size: 32px !important; }
+      h2.title { font-size: 24px !important; }
+      .sub  { font-size: 14px !important; margin-top: 10px !important; }
+      .eyebrow { font-size: 10px !important; margin-bottom: 10px !important; }
+      .card { padding: 18px 16px !important; }
+      .card-icon { font-size: 22px !important; margin-bottom: 10px !important; }
+      .feat-row { padding: 12px 14px !important; margin-bottom: 8px !important; }
+      .svc-block { padding: 22px 18px !important; }
+      .svc-title { font-size: 18px !important; }
+      .why-item { padding: 16px 14px !important; }
+      .steps { max-width: 100% !important; }
+      .serp { display: none !important; }
+      .slide-logo { height: 13px !important; top: 18px !important; left: 20px !important; }
+      .nav-controls { bottom: 16px !important; }
+      .nav-btn { width: 36px !important; height: 36px !important; font-size: 14px !important; }
+      /* content slides: left align */
+      .slide.bg-surface .col-c,
+      .slide.bg-white .col-c { align-items: flex-start !important; text-align: left !important; }
+      /* cover and closing: keep centered */
+      .slide.bg-cover .col-c,
+      .slide.bg-white:last-of-type .col-c { align-items: center !important; text-align: center !important; }
+    }
+  </style>
 </head>
 <body>
 
